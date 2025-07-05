@@ -1,0 +1,114 @@
+@charset 'utf-8';
+
+/**
+** 통계관리
+**/
+
+.m-stats {
+    &-list-graph{
+        .m--graph-inner {
+            overflow: hidden;
+            padding-right: 55px;
+            text-align: left;
+
+            &-bar {
+                float: left;
+                display: inline-block;
+                background: #ddd;
+                height: 23px;
+            }
+            > span {
+                margin-left: 8px;
+                line-height: 23px;
+            }
+        }
+
+        tfoot {
+            tr {
+                > * {
+                    padding: 9px 12px;
+                    border-top: 2px solid  #596275;
+                    border-right: 1px solid  #d3d3d3;
+
+                    > span {
+                        display: inline-block;
+                        padding: 9px 0;
+                        min-width: 50px;
+                    }
+
+                    > p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    &-path {
+        tbody.mm_dropdown {
+
+    		&.__dropdown-on {
+                td {
+                    p {
+                        .btn_dropdown {
+                            .mco_form-select {
+                                @include transform(rotate(180deg));
+                            }
+                        }
+                    }
+                }
+
+    			.mm_dropdown-item {
+    				display: table-row;
+    			}
+    		}
+
+            td {
+                p {
+                    line-height: 30px;
+
+                    .btn_dropdown {
+                        padding: 0;
+                        margin-right: 10px;
+                        min-width: 30px;
+                        text-align: center;
+
+            			.mco_form-select {
+            				font-size: 10px;
+            			}
+            		}
+                }
+            }
+
+
+    		.mm_dropdown-item {
+    			display: none;
+
+                td {
+                    p {
+                        padding-left: 9%;
+                    }
+                }
+    		}
+    	}
+
+        tfoot {
+            tr {
+                > * {
+                    padding: 9px 12px;
+                    border-top: 2px solid  #596275;
+                    border-right: 1px solid  #d3d3d3;
+
+                    > span {
+                        display: inline-block;
+                        padding: 9px 0;
+                    }
+
+                    > p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

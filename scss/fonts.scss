@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+/**
+** font-face
+** 마지막 파라미터 기본 값은 eot woff2 woff ttf svg 입니다.
+**/
+
+/// fontello
+@include font-face('Fontello', '../fonts/fontello');
+
+/// noto sans kr
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Regular', 400, normal, eot woff2 woff otf svg);
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Thin', 100, normal, eot woff2 woff otf svg);
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Light', 300, normal, eot woff2 woff otf svg);
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Medium', 500, normal, eot woff2 woff otf svg);
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Bold', 700, normal, eot woff2 woff otf svg);
+@include font-face('NotoSansKR', '../fonts/NotoSansCJKkr-Black', 900, normal, eot woff2 woff otf svg);
+
+/// ebrima
+@include font-face('Ebrima', '../fonts/ebrima', 400, normal, eot woff2 woff ttf);
+@include font-face('Ebrima', '../fonts/ebrimabd', 700, normal, eot woff2 woff ttf);
+
+/// roboto
+@include font-face('Roboto', '../fonts/Roboto-Regular', 400);
+@include font-face('Roboto', '../fonts/Roboto-Thin', 100);
+@include font-face('Roboto', '../fonts/Roboto-Light', 300);
+@include font-face('Roboto', '../fonts/Roboto-Medium', 500);
+@include font-face('Roboto', '../fonts/Roboto-Bold', 700);
+@include font-face('Roboto', '../fonts/Roboto-Black', 900);
+
+/// spoqa han sans ver.2
+// @include font-face(spoquaHanSans, '../fonts/SpoqaHanSans-Regular');
+// @include font-face(spoquaHanSans, '../fonts/SpoqaHanSans-Bold', 700);
+// @include font-face(spoquaHanSans, '../fonts/SpoqaHanSans-Light', 300);
+// @include font-face(spoquaHanSans, '../fonts/SpoqaHanSans-Thin', 100);

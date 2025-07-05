@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+/**
+** 회원관리
+**/
+
+.m-member {
+    /// 모바일 푸시 관리
+    &-push-list {
+        table {
+            tbody {
+                tr {
+                    td {
+                        img {
+                            width: auto;
+                            height: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ///-- 모바일 푸시 관리
+}

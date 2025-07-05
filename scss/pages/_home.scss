@@ -1,0 +1,121 @@
+@charset 'utf-8';
+
+/**
+** 홈페이지 관리
+**/
+
+/// PR센터 관리
+.m-home-pr {
+    /// 갤러리
+    &-gallery {
+        tbody {
+            tr {
+                td {
+                    img {
+                        width: auto;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+    }
+    /// 갤러리
+
+    /// 게시글 등록/수정
+    &-form {
+        tbody {
+            tr {
+                td {
+                    /// 이미지 다중 업로드
+                    .mm_image-list {
+                        .mm_image-multiple {
+                            margin-bottom: 4px;
+                        }
+
+
+                        .text_file {
+                            width: 106px;
+                        }
+                    }
+                    ///-- 이미지 다중 업로드
+                }
+            }
+        }
+    }
+    ///-- 게시글 등록/수정
+}
+///-- PR센터 관리
+
+/// SNS 관리
+.m-home-sns-board {
+    table {
+        tbody {
+            tr {
+                td {
+                    .image_thumb {
+                        overflow: hidden;
+                        height: 75px;
+
+                        img {
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .__list-sortable {
+        &.__sortable-on {
+            table {
+                tr {
+                    td:first-child {
+                        > span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+///-- SNS 관리
+
+/// 개별영역 관리
+.m-home-otherarea {
+    &-list {
+        table {
+            tbody {
+                tr {
+                    td {
+                        .image_thumb {
+                            overflow: hidden;
+                            height: 75px;
+
+                            img {
+                                width: auto;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .__list-sortable {
+            &.__sortable-on {
+                table {
+                    tr {
+                        td:first-child {
+                            > span {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+///-- 개별영역 관리

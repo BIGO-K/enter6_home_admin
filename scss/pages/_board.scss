@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+/**
+** 게시판관리
+**/
+
+.m-board {
+    /// 게시글 목록
+    &-list {
+
+        /// 중요글 사용 목록(tr에 사용)
+        .list_important {
+            background: #f9f9f9;
+        }
+        ///-- 중요글 사용 목록
+
+        /// FAQ
+        &-faq {
+            .mm_dropdown {
+        		&.__dropdown-on {
+                    .btn_dropdown {
+                        .mco_form-select {
+                            @include transform(rotate(180deg));
+                        }
+                    }
+
+        			.mm_dropdown-item {
+        				display: table-row;
+        			}
+        		}
+
+                tr {
+                    &.mm_dropdown-item {
+            			display: none;
+                        background: #f9f9f9;
+
+                        .m-board-faq-answer {
+                            padding: 9px 0;
+                            padding-left: 25px;
+
+                            > * {
+                                text-align: left;
+                            }
+                        }
+            		}
+
+                    td {
+                        .mm_btngroup {
+                            .btn_dropdown {
+                    			position: relative;
+                    			padding-right: 32px;
+
+                    			.mco_form-select {
+                    				position: absolute;
+                    				right: 16px;
+                    				font-size: 10px;
+                    			}
+                    		}
+                        }
+                    }
+                }
+        	}
+        }
+        ///-- FAQ
+    }
+    ///-- 게시글 목록
+
+    /// 게시글 등록/수정
+    &-form {
+        tbody {
+            tr {
+                td {
+                    /// 이미지 다중 업로드
+                    .mm_image-list {
+                        .mm_image-multiple {
+                            margin-bottom: 4px;
+                        }
+
+
+                        .text_file {
+                            width: 106px;
+                        }
+                    }
+                    ///-- 이미지 다중 업로드
+                }
+            }
+        }
+    }
+    ///-- 게시글 등록/수정
+
+    /// 자세히 보기 내용
+    &-detail {
+        &-contents {
+            padding:10px 8px;
+            min-height: 100px;
+            border: 1px solid #d3d3d3;
+            background: #ebebeb;
+            color: #202020;
+            font-size: 14px;
+        }
+    }
+    ///-- 자세히 보기 내용
+}

@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+/**
+** 전시관리
+**/
+
+.m-display-banner {
+    &-float {
+        table {
+            tr {
+                td {
+                    img {
+                        width: auto;
+                        height: 100%;
+                        max-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
