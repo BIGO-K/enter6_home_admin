@@ -27,9 +27,9 @@
 
 ## DESIGN
 + 디자인 구글드라이브 경로  
-	https://drive.google.com/drive/u/0/folders/1l77TnwL2HKjEjhX1vlxHhFtlmdptMxQ1
+	https://drive.google.com/drive/
 + 디자인 IA  
-	https://drive.google.com/drive/u/0/folders/1JPDSHwCZDAsTkVAdXpfXqGnQzFGd-F-l
+	https://drive.google.com/drive/
 <br><br>
 - - -
 
